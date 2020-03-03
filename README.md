@@ -1,4 +1,4 @@
-(appScreen.jpg)
+![AppScreen](appScreen.jpg)
 
 # Caesar Cipher
 
