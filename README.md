@@ -1,17 +1,19 @@
 ![AppScreen](appScreen.jpg)
 # TP 01 : Raedin Khaled Sakhri / Groupe: 2
 
-You can check my code at lib/main.dart : Encrypt Function starts from Line 34 and Decrypt Function Starts from Line 61.
+* You can check my code at **lib/main.dart** : Encrypt Function starts from Line 34 and Decrypt Function Starts from Line 61.
 
-There are two possibilites to input text : 1- by typing directly to the Text Field, or by uploading a .txt file from your phone.
+* There are two possibilites to input text : 1- by typing directly to the Text Field, or by uploading a .txt file from your phone.
 
-I have uploaded .apk FILE ready to be Installed on your Device, so you can test the app directly on Your Phone.
+* I have uploaded .apk FILE ready to be Installed on your Device, so you can test the app directly on Your Phone.
 
-Download the apk from here: https://github.com/raedinkhaled/cipher/raw/master/cipher.apk .
+* Download the apk from here: https://github.com/raedinkhaled/cipher/raw/master/cipher.apk .
 
-You may get some Security Warnings about the app due to Google Play Protect policy.
+* You may get some Security Warnings about the app due to Google Play Protect policy.
 
-If you want, I can upload the app to the Play Store and give you the link from there so you don't get those Security Warnings.
+* If you want, I can upload the app to the Play Store and give you the link from there so you don't get those Security Warnings.
+
+* There is also a Java Version of Code here : **code.java** ( Without UI ).
 
 # Caesar Cipher
 
