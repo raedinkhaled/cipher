@@ -8,7 +8,7 @@ import 'package:string_validator/string_validator.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+  // This widget is the root of your application. 0796120144
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -133,10 +133,11 @@ bool _fileChoosen = false;
     });
   }
 
+String isChoosen="";
+
   void doJob3() async {
     try {
       File file =await FilePicker.getFile(type: FileType.CUSTOM, fileExtension: 'txt');
-      if (!mounted) return;
       if (await file.exists()) {
       contents = await file.readAsString();
       _fileChoosen = true;
@@ -144,13 +145,16 @@ bool _fileChoosen = false;
     } on PlatformException catch (e) {
       print("Unsupported operation" + e.toString());
     }
-    
+    if (!mounted) return;
+    setState(() {
+            isChoosen = "File Uploaded Successfuly";
+    });
     
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+   return Scaffold(
       backgroundColor: Color(0xFF262833),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -163,7 +167,7 @@ bool _fileChoosen = false;
                   'Methode de Cesar:',
                   style: TextStyle(
                     fontSize: 20.0,
-                    fontWeight: FontWeight.bold,
+                  
                   ),
                 ),
               ),
@@ -279,7 +283,8 @@ bool _fileChoosen = false;
                   ),
                 ),
               ),
-              Padding(
+              Text(isChoosen),
+               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: TextField(
                   controller: myController3,
