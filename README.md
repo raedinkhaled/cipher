@@ -1,6 +1,10 @@
 ![AppScreen](appScreen.jpg)
 # TP 01 : Raedin Khaled Sakhri / Groupe: 2
 
+* Vigenere Cipher Code added at **lib/screens/vigenere.dart
+
+*App on PlayStore : https://play.google.com/store/apps/details?id=raedin.cipher
+
 * You can check my code at **lib/main.dart** : **Encrypt Function** starts from Line **34** and **Decrypt Function** Starts from Line **61**.
 
 * There are two possibilites to input text : 1- by typing directly to the Text Field, or by uploading a .txt file from your phone.
