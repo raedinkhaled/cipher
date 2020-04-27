@@ -11,17 +11,12 @@
 
 * I have uploaded .apk FILE ready to be Installed on your Device, so you can test the app directly on Your Phone.
 
-* Download the apk from here: https://github.com/raedinkhaled/cipher/raw/master/cipher.apk .
+* Download the APP from here: https://play.google.com/store/apps/details?id=raedin.cipher .
 
-* You may get some Security Warnings about the app due to Google Play Protect policy.
 
-* If you want, I can upload the app to the Play Store and give you the link from there so you don't get those Security Warnings.
+# Cryptography
 
-* There is also a Java Version of Code here : **code.java** ( Without UI ).
-
-# Caesar Cipher
-
-Caesar Cipher Algorithm App.
+Cryptography Algorithms App.
 
 ## Getting Started
 
