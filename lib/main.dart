@@ -1,3 +1,4 @@
+import 'package:CaesarCipher/screens/affine.dart';
 import 'package:CaesarCipher/screens/caesar.dart';
 import 'package:CaesarCipher/screens/vigenere.dart';
 import 'package:file_picker/file_picker.dart';
@@ -32,66 +33,75 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  
-
   @override
   Widget build(BuildContext context) {
-   return Scaffold(
-     body: Column(
-       mainAxisAlignment: MainAxisAlignment.center,
-       crossAxisAlignment: CrossAxisAlignment.center,
-       children: <Widget>[
-         Container(
-           child: Text("Choose One of the Following:",
-           style: TextStyle(
-             fontWeight: FontWeight.bold,
-             fontSize: 17
-           ),),
-         ),
-         GestureDetector(
-           onTap: (){
-             Navigator.push(context, MaterialPageRoute(builder: (context)=> CaesarUI()));
-           },
-                    child: Container(
-                          margin: EdgeInsets.all(20.0),
-
-                          padding: EdgeInsets.symmetric(vertical: 13),
-                          alignment: Alignment.center,
-                          decoration: BoxDecoration(
-                              
-                              borderRadius: BorderRadius.all(Radius.circular(5)),
-                             
-                              color: Color(0xFFfec689)),
-                          child: Text(
-                            'Caesar Cipher',
-                            style:
-                                TextStyle(fontSize: 20, color: Color(0xFF262833)),
-                          ),
-                        ),
-         ),
-         GestureDetector(
-           onTap: (){
-             Navigator.push(context, MaterialPageRoute(builder: (context)=> Vigenere()));
-           },
-                    child: Container(
-                          margin: EdgeInsets.symmetric(horizontal:20.0),
-
-                          padding: EdgeInsets.symmetric(vertical: 13),
-                          alignment: Alignment.center,
-                          decoration: BoxDecoration(
-                              
-                              borderRadius: BorderRadius.all(Radius.circular(5)),
-                             
-                              color: Color(0xFF262833)),
-                          child: Text(
-                            'Vigenere Cipher',
-                            style:
-                                TextStyle(fontSize: 20, color: Color(0xFFfec689)),
-                          ),
-                        ),
-         )
-       ],
-     ),
-   );
+    return Scaffold(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          Container(
+            child: Text(
+              "Choose One of the Following:",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+            ),
+          ),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => CaesarUI()));
+            },
+            child: Container(
+              margin: EdgeInsets.all(20.0),
+              padding: EdgeInsets.symmetric(vertical: 13),
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(5)),
+                  color: Color(0xFFfec689)),
+              child: Text(
+                'Caesar Cipher',
+                style: TextStyle(fontSize: 20, color: Color(0xFF262833)),
+              ),
+            ),
+          ),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Vigenere()));
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.0),
+              padding: EdgeInsets.symmetric(vertical: 13),
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(5)),
+                  color: Color(0xFF262833)),
+              child: Text(
+                'Vigenere Cipher',
+                style: TextStyle(fontSize: 20, color: Color(0xFFfec689)),
+              ),
+            ),
+          ),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Affine()));
+            },
+            child: Container(
+              margin: EdgeInsets.all(20.0),
+              padding: EdgeInsets.symmetric(vertical: 13),
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(5)),
+                  color: Color(0xFFD0E3CC)),
+              child: Text(
+                'Affine Cipher',
+                style: TextStyle(fontSize: 20, color: Color(0xFF262833)),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
